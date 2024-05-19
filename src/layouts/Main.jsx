@@ -57,7 +57,7 @@ const Main = () => {
     return (
         <div className='flex min-h-dvh'>
             {/* left navigation menu */}
-            < div className='bg-purple pl-11 py-12 min-w-[345px]' >
+            < div className='bg-purple pl-11 py-12 min-w-[345px] h-full fixed start-0 left-0' >
                 
                 <div className='flex items-center gap-4'>
                     <img className='' src={logo} alt="" />
@@ -69,7 +69,7 @@ const Main = () => {
                 </div>
             </div >
             {/* right outlet */}
-            <div className='bg-background flex-grow'>
+            <div className='bg-background flex-grow ml-[345px] sticky start-0 '>
                 <Outlet></Outlet>
             </div>
         </div>

@@ -9,47 +9,57 @@ import Finance from "../pages/finance/Finance";
 import Users from "../pages/users/Users";
 import Chat from "../pages/chat/Chat";
 import Activity from "../pages/activity/Activity";
+import TeacherDetails from "../pages/teacherDetails/TeacherDetails";
+import StudentDetails from "../pages/studentDetails/StudentDetails";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Main/>,
+        element: <Main />,
         children: [
             {
                 path: "/",
-                element: <Dashboard/>
+                element: <Dashboard />
             },
             {
                 path: "/students",
-                element: <Students/>
+                element: <Students />
+            },
+            {
+                path: '/studentDetails',
+                element: <StudentDetails />
             },
             {
                 path: "/teachers",
-                element: <Teachers/>
+                element: <Teachers />
+            },
+            {
+                path: '/teacherDetails',
+                element: <TeacherDetails />
             },
             {
                 path: "/events",
-                element: <Events/>
+                element: <Events />
             },
             {
                 path: "/food",
-                element: <Food/>
+                element: <Food />
             },
             {
                 path: "/finance",
-                element: <Finance/>
+                element: <Finance />
             },
             {
                 path: "/users",
-                element: <Users/>
+                element: <Users />
             },
             {
                 path: "/chat",
-                element: <Chat/>
+                element: <Chat />
             },
             {
                 path: "/activity",
-                element: <Activity/>
+                element: <Activity />
             },
         ]
     },
